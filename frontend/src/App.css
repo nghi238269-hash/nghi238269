@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  padding: 28px 5%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 42px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 27px;
+}
+
+.header p {
+  margin: 0;
+  color: #dbeafe;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 24px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.stat-card,
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card span {
+  display: block;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.stat-card strong {
+  font-size: 30px;
+  color: #2563eb;
+}
+
+.panel {
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  margin: 0 0 22px;
+  font-size: 20px;
+}
+
+.device-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.device-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #dbeafe;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-actions,
+.search-form,
+.list-heading,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 7px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.info {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.small {
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
+.list-heading {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.list-heading h2 {
+  margin: 0;
+}
+
+.search-form input {
+  min-width: 250px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+th {
+  background: #f8fafc;
+  color: #475569;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.broken {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.repair {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.stopped {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.empty {
+  text-align: center;
+  color: #64748b;
+  padding: 30px;
+}
+
+.alert {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.modal {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal h2 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.modal p {
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .device-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats,
+  .device-form {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 21px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .search-form input {
+    min-width: 0;
+  }
+}
