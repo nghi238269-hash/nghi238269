@@ -1,47 +1,51 @@
-# Hệ thống quản lý nhân sự
+cat > README.md <<'EOF'
+# Hệ thống quản lý thiết bị lớp học
 
 ## 1. Thông tin sinh viên
-- Họ tên: [Điền họ tên]
-- MSSV: [Điền MSSV]
-- Lớp: [Điền lớp]
+- Họ tên: Lý Phương Nghi
+- MSSV: 238269
+- Lớp: DH23TIN10
 
 ## 2. Giới thiệu
-Hệ thống quản lý nhân sự cho phép người dùng xem danh sách,
-thêm, tìm kiếm, cập nhật và xóa thông tin nhân viên.
+Hệ thống quản lý thiết bị lớp học giúp người dùng quản lý thông tin thiết bị trong các phòng học.
+
+Các chức năng chính:
+- Hiển thị danh sách thiết bị.
+- Xem thông tin chi tiết thiết bị.
+- Thêm thiết bị mới.
+- Cập nhật thông tin thiết bị.
+- Xóa thiết bị.
+- Tìm kiếm thiết bị.
+- Quản lý trạng thái thiết bị.
 
 Dữ liệu được lưu trữ trên MongoDB Atlas.
 
 ## 3. Công nghệ sử dụng
-- Frontend: React
+- Frontend: React, Vite
 - Backend: Node.js, Express
-- Database: MongoDB Atlas
+- Database: MongoDB Atlas, Mongoose
 - Source Code: Git, GitHub
 - Container: Docker
 - Docker Registry: Docker Hub
 - Deployment: Render
 
 ## 4. Cấu trúc dự án
-- backend/: Mã nguồn Backend
-- frontend/: Mã nguồn Frontend
-- README.md: Tài liệu dự án
-- .gitignore: Các file không đưa lên GitHub
+- backend/: Mã nguồn Backend.
+- backend/models/: Mongoose models.
+- backend/routes/: REST API.
+- frontend/: Mã nguồn giao diện React.
+- README.md: Tài liệu dự án.
+- .gitignore: Các file không đưa lên GitHub.
 
-## 5. Hướng dẫn chạy ứng dụng
+## 5. Hướng dẫn cài đặt và chạy ứng dụng
 
-### Backend
+### 5.1. Yêu cầu
+- Node.js và npm.
+- MongoDB Atlas.
+- Git.
+
+### 5.2. Cấu hình Backend
+
+```bash
 cd backend
 npm install
-npm run dev
-
-### Frontend
-cd frontend
-npm install
-npm run dev
-
-## 6. Các đường link dự án
-- GitHub Repository: [Cập nhật sau]
-- Docker Hub Backend: [Cập nhật sau]
-- Docker Hub Frontend: [Cập nhật sau]
-- Render App: [Cập nhật sau]
-- Render API: [Cập nhật sau]
-- MongoDB Atlas: [Cập nhật sau]
